@@ -2,16 +2,20 @@
 
 Aplicación web frontend desarrollada con Angular para clubes deportivos, bomberos, ONGs, academias y otras entidades de cobros. Simplifica la administración, mejora la experiencia de los miembros y lleva tu organización al siguiente nivel con una solución 100% online, segura y adaptable.
 
-![Angular](https://img.shields.io/badge/Angular-20.3-DD0031?style=flat-square&logo=angular&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![RxJS](https://img.shields.io/badge/RxJS-7.8-B7178C?style=flat-square&logo=reactivex&logoColor=white)
-![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
+<div align="center">
+
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink?style=for-the-badge&logo=sass&logoColor=white)
+![SSR](https://img.shields.io/badge/SSR-Universal-black?style=for-the-badge&logo=angular&logoColor=white)
+
+</div>
 
 ## 📄 Sobre el Proyecto
 
 4x Web Software es una aplicación web frontend desarrollada con Angular que proporciona una interfaz moderna y responsiva para la gestión de organizaciones sin fines de lucro y entidades de cobros. El sistema incluye Server-Side Rendering (SSR) con Angular Universal, componentes modulares standalone, y características avanzadas de seguridad y validación.
 
-![Demo de la aplicación](LINK_A_TU_SCREENSHOT_O_GIF_AQUI)
 
 ## ✨ Características Principales
 
