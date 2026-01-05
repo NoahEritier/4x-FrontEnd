@@ -68,19 +68,74 @@ cd ClientApp
 npm install
 ```
 
+3. **Instala las dependencias del backend (opcional, si necesitas el servidor de desarrollo):**
+```bash
+cd ../server
+npm install
+```
+
 ## 💻 Uso
 
-### Desarrollo
+### Iniciar el Backend
 
-Para ejecutar la aplicación en modo desarrollo:
+Para que la aplicación funcione correctamente, necesitas iniciar el servidor backend primero:
 
+1. **Navega a la carpeta del servidor:**
+```bash
+cd server
+```
+
+2. **Instala las dependencias (solo la primera vez):**
+```bash
+npm install
+```
+
+3. **Inicia el servidor backend:**
+```bash
+npm start
+```
+
+El servidor se ejecutará en `http://localhost:3000`
+
+**Alternativas para iniciar el backend:**
+
+Desde la raíz del proyecto:
+```bash
+npm run start:backend
+```
+
+O manualmente:
+```bash
+cd server && npm start
+```
+
+**Para desarrollo con auto-reload (si tienes nodemon instalado):**
+```bash
+cd server
+npm run dev
+```
+
+**Verificar que el backend funciona:**
+- Abre `http://localhost:3000/api/health` en tu navegador
+- Deberías ver: `{"status":"ok","message":"Backend funcionando correctamente"}`
+
+### Iniciar el Frontend
+
+Para ejecutar la aplicación frontend en modo desarrollo:
+
+**Terminal 1 - Backend (debe estar ejecutándose primero):**
+```bash
+cd server
+npm start
+```
+
+**Terminal 2 - Frontend:**
 ```bash
 cd ClientApp
 npm start
 ```
 
 O usando Angular CLI:
-
 ```bash
 cd ClientApp
 ng serve
@@ -88,7 +143,7 @@ ng serve
 
 La aplicación estará disponible en `http://localhost:4200` y se recargará automáticamente cuando modifiques los archivos.
 
-**Nota:** Asegúrate de configurar la URL de tu API backend en `ClientApp/src/environments/environment.ts`:
+**Nota:** El frontend está configurado para conectarse automáticamente al backend en `http://localhost:3000`. Asegúrate de que el backend esté ejecutándose antes de iniciar el frontend. La configuración se encuentra en `ClientApp/src/environments/environment.ts`:
 
 ```typescript
 export const environment = {

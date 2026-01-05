@@ -410,3 +410,125 @@
     color: #a0aec0;
   }
 }
+
+/* Footer */
+.footer {
+  background: #0f1a2a;
+  color: #e2e8f0;
+  padding: 36px 24px 20px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: 0;
+  width: 100vw;
+  overflow-x: clip;
+  margin-top: 4rem;
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 56px;
+}
+
+.footer__brand {
+  margin-bottom: 10px;
+}
+
+.footer__logo {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+
+.footer__copy {
+  color: #cbd5e1;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer__rights {
+  color: #94a3b8;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.footer__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.footer__icon:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.footer__icon .icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.footer__right {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.footer__links a:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+@supports (width: 100svw) {
+  .footer {
+    margin-left: calc(50% - 50svw);
+    margin-right: calc(50% - 50svw);
+    width: 100svw;
+  }
+}
+
+@supports not (overflow: clip) {
+  .footer {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
